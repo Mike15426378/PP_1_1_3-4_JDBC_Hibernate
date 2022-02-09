@@ -6,11 +6,11 @@ import jm.task.core.jdbc.service.UserServiceImpl;
 
 public class Main {
 
-    private static UserService us = new UserServiceImpl();
-    private static User user1 = new User("Ivan", "Ivanov", (byte) 40);
-    private static User user2 = new User("Petr", "Petrov", (byte) 30);
-    private static User user3 = new User("Sanya", "Sankov", (byte) 25);
-    private static User user4 = new User("Vasya", "Vaskin", (byte) 20);
+    private static final UserService us = new UserServiceImpl();
+    private static final User user1 = new User("Ivan", "Ivanov", (byte) 40);
+    private static final User user2 = new User("Petr", "Petrov", (byte) 30);
+    private static final User user3 = new User("Sanya", "Sankov", (byte) 25);
+    private static final User user4 = new User("Vasya", "Vaskin", (byte) 20);
 
     public static void main(String[] args) {
     us.createUsersTable();
