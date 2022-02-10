@@ -20,7 +20,7 @@ public class Main {
         us.saveUser(user3.getName(), user3.getLastName(), user3.getAge());
         us.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
 
-        System.out.println(us.getAllUsers());
+        us.getAllUsers();
 
         us.cleanUsersTable();
 
